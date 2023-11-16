@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozarko PI-20-02</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <form>
+        <input type="button" id="watch" value="Watch me">
+        <input type="button" id="clearWatch" value="Clear watch">
+    </form>
+
+    <div id="location">
+        Your location will go here.
+    </div>
+    <div id="distance">
+        Distance from College will go here.
+    </div>
+    <div id="destinationInput">
+        <label for="latInput">Latitude:</label>
+        <input type="text" id="latInput" placeholder="Enter latitude">
+        <label for="lngInput">Longitude:</label>
+        <input type="text" id="lngInput" placeholder="Enter longitude">
+        <button id="setDestination">Set Destination</button>
+    </div>
+    <button id="scrollToDest">Scroll to Destination</button>
+
+    <div id="map" style="height: 400px;"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
